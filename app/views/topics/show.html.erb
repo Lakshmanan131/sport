@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @topic.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @topic.age %>
+</p>
+<!--<div class="sd">-->
+<!--  <h2>Posts</h2>-->
+  <%# @topic.posts.each { |post| %>
+<!--    <ul>-->
+<!--      <li><%#= post.body %></li>-->
+<!--    </ul>-->
+  <%# } %>
+<!--</div>-->
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Add sport', topic_posts_path(@topic) %>
+<%= link_to 'Back', topics_path %>

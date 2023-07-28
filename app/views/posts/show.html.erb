@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sport name:</strong>
+  <%= @post.sport_name %>
+</p>
+
+<p>
+  <strong>Player name:</strong>
+  <%= @post.player_name %>
+</p>
+
+<p>
+  <strong>Jersy no:</strong>
+  <%= @post.jersy_no %>
+</p>
+
+<%= link_to 'Edit', edit_topic_post_path(@post) %> |
+<%= link_to 'Back', topic_posts_path %>
